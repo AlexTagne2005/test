@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(226, 226, 245);
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+button{
+    margin-left: 100px;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(89, 135, 228);
+    text-decoration: underline;
+}
