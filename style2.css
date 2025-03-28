@@ -1,0 +1,11 @@
+body{
+    background-image: url(background-image.jpg);
+    background-size: cover;
+}
+
+#welcome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /*position: fixed;*/
+    color: aliceblue;
+    text-align: center;
+}
