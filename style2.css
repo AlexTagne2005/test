@@ -1,6 +1,7 @@
 body{
     background-image: url(background-image.jpg);
     background-size: cover;
+    animation: clignotant 5s ease-out infinite alternate;
 }
 
 #welcome{
@@ -8,4 +9,13 @@ body{
     /*position: fixed;*/
     color: aliceblue;
     text-align: center;
+}
+
+@keyframes clignotant {
+    0% {opacity: 0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}
 }
