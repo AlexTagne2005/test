@@ -1,21 +1,23 @@
 body{
     background-color: rgb(226, 226, 245);
 }
+
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 
 }
-button{
-    margin-left: 100px;
-    border-radius: 10px;
-}
+
 h1{
     color: rgb(89, 135, 228);
     text-decoration: underline;
-
-    
 }
+
 table {
     width: 80%;
     margin: 0 auto;
@@ -42,20 +44,21 @@ table {
     background-color: #f1f1f1;
   }
 
-
-.titi_button {
-  width: 600px;
-  margin: 100px auto;
-  background-color: #757070;
-  color: #f9f9f9;
-  font-style: bold;
-  font-size: 20px;
-  border: 2px solid #ddd;
-  text-align: center;
-  padding: 10px;
-  border-radius: 30px;
+a{
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  margin: 10px;
 }
 
-a {
-  
+a:hover{
+  display: inline-block;
+  box-shadow:  5px 5px black;
+}
+
+a:active{
+  font-size: 5px;
 }

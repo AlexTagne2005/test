@@ -5,9 +5,9 @@ body{
 }
 
 #welcome{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*position: fixed;*/
-    color: aliceblue;
+    color: rgb(26, 109, 182);
     text-align: center;
 }
 
