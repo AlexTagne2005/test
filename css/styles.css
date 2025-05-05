@@ -1,10 +1,13 @@
 body{
-    background-color: rgb(226, 226, 245);
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 header{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 p{
@@ -15,7 +18,7 @@ p{
 
 h1{
     color: rgb(89, 135, 228);
-    text-decoration: underline;
+
 }
 
 table {
@@ -44,21 +47,56 @@ table {
     background-color: #f1f1f1;
   }
 
-a{
-  border-radius: 5px;
-  background-color: blue;
+header nav a{
   color: white;
   text-decoration: none;
   padding: 5px;
-  display: inline-block;
   margin: 10px;
 }
 
 a:hover{
-  display: inline-block;
-  box-shadow:  5px 5px black;
+  color: rgb(255, 97, 97);
 }
 
 a:active{
   font-size: 5px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+.logo h1{
+  color: #4CAF50;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family:  Arial, sans-serif, Geneva, Verdana, sans-serif;
+}
+.logo span{
+  color: rgb(89, 135, 228);
+}
+header{
+  box-sizing: border-box;
+  background-color: rgb(209, 209, 228);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  padding-right: 10px;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  width: 100%;
+  align-items: center;
+}
+.navlinks{
+  margin-right: 50px;
+  gap: 10px;
+  display: flex;
 }
