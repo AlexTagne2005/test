@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Contact</title>
     <style>
@@ -46,20 +47,79 @@
         .form-container button:hover {
             background-color: #218838;
         }
+        .social-icons a{
+    display:inline-flex;
+    padding: 10px;
+    border:2px solid #ccc;
+    border-radius: 8px;
+    font-size:24px;
+    color:#333;
+    text-decoration: none;
+    margin:0.8px;
+        }
+        .social-icons{
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    position:absolute;
+    margin:30px 0;
+}
+.box input{
+    width: 90%;
+    padding: 15px;
+    background:#cccccc5b;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    font-size: 16px;
+    color:black;
+    font-weight:300;
+}
+box input::placeholder{
+    color:#fff;
+    font-weight:400;
+}
+
+
+.box i{
+    position:relative;
+    transform:translate(1500%);
+    right:20px;
+    /* top: 10px; */
+    bottom: 35px;
+    font-size:17px;
+    color:rgba(0,0,0, .492);
+}
+
     </style>
 </head>
 <body>
     <div class="form-container">
         <h2>Formulaire de Contact</h2>
         <form action="/submit_form" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+           
+            <div class="box">
+                <label for="name">Nom :</label>
+                <input type="text" placeholder="Nom" required>
+                <i class="fa fa-user"></i>
+            </div>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+            <div class="box">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <i class="fa fa-envelope"></i>
+            </div>
 
             <label for="message">Message :</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="social-icons">
+                <a href="a"><i class="fa-brands fa-facebook"></i></a>
+                <a href="a"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="a"><i class="fa-brands fa-instagram"></i></a>
+                <a href="a"><i class="fa-brands fa-github"></i></a>
+            </div>
 
             <button type="submit">Envoyer</button>
         </form>
