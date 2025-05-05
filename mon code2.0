@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscrip.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-box login">
+            <form action=""> 
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="a">forgot password?</a>
+                </div>
+                <button type="submit" class="btn" id="login-btn">login</button>
+                <p>or login with social platforms?</p>
+                <div class="social-icons">
+                    <a href="a"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="a"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="a"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="a"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action=""> 
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="mail" placeholder="e.mail" required>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+               
+                <button type="submit" class="btn" id="register-btn" onclick="inscription()">register</button>
+                <p>or register with social platforms?</p>
+                <div class="social-icons">
+                    <a href="a"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="a"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="a"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="a"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn " id="register-btn" onclick="inscription()">Register</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn" onclick="connection()">Login</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="inscrip.js"> </script> 
+</body>
+
+</html>
